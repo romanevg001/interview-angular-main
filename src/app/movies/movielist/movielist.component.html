@@ -1,0 +1,17 @@
+<div class="p-5">
+    <div class="d-flex pb-3">
+        <div>
+            <input type="checkbox" #chb (change)="checkAll(chb.checked)" id="chall" /> <label for="chall" class="ms-1 me-3">Check all</label>
+        </div> 
+        <div>
+            <input type="text" #srch (keyup)="searchMovie(srch.value)" />
+            <button (click)="clear()">Clear</button>
+        </div>
+        
+    </div>
+    <ol>
+        <li *ngFor="let item of movies$ | async">
+        <input type="checkbox" [checked]="item.isOnline" /> {{item.name}}
+        </li>
+    </ol>
+</div>
