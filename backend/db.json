@@ -2,7 +2,7 @@
   "movie": [
     {
       "id": "79B1FA10-6CD0-BB5D-418D-D6C56D1EA6B3",
-      "name": "snow",
+      "name": "snow winter",
       "isOnline": false,
       "_isEdit": false
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": "436635A7-3CEF-6BE9-3687-412983B31297",
-      "name": "my new name",
+      "name": "my new name5",
       "isOnline": false,
       "_isEdit": false
     },
@@ -56,11 +56,6 @@
     {
       "id": "272EADD3-7686-9229-826D-CCB764E7861E",
       "name": "rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis,",
-      "isOnline": true
-    },
-    {
-      "id": "EEC43D96-5967-373B-0982-1085DC9E8537",
-      "name": "Morbi",
       "isOnline": true
     },
     {
