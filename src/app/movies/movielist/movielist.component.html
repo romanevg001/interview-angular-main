@@ -11,7 +11,20 @@
     </div>
     <ol>
         <li *ngFor="let item of movies$ | async">
-        <input type="checkbox" [checked]="item.isOnline" /> {{item.name}}
+            <input type="checkbox" [checked]="item.isOnline" /> 
+            <span *ngIf="item._isEdit">
+                <input type="text" [value]="item.name" #editItemField />
+                <button class="btn btn-sm ms-3 me-3 btn-light" (click)="edit(item,editItemField.value)">save</button> 
+
+            </span>
+            <span *ngIf="!item._isEdit">
+                {{item.name}} 
+                <button class="btn btn-sm ms-3 me-3 btn-light" (click)="edit(item,'')">edit</button> 
+
+            </span>
+            
+
+            <button class="btn btn-sm btn-light" (click)="delete(item.id)">delete</button>
         </li>
     </ol>
 </div>
